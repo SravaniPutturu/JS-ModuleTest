@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+body{
+    background-color: #1E1E1E;;
+}
+
+/* Header */
+
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111111;
+    color: white;
+    padding: 15px;
+    z-index: 1;
+}
+.blog{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #111111;
+}
+#myBtn{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #E3E3E3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #111111;
+    border:  1px solid #FFFFFF;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+
+  /*pop up box*/
+
+
+  .input-heading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    color:  #333333;;
+  }
+  textarea{
+    resize: none;
+    height: 150px;
+    width: 100%;
+    padding: 5px;
+    outline: none; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .input{
+    width: 100%; 
+    height: 40px; 
+    padding: 5px; 
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+  }
+  .action-btn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    background-color: #E3E3E3;
+    padding: 5px;
+    padding-left: 15x;
+    padding-right: 15px;
+    border: 1px solid #333333;
+    margin: 5px;
+  }
+
+
+
+  /* on webpage */
+
+
+  /* .content{
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    height: auto;
+    color: white;
+    font-size: 20px;
+    
+  } */
+  table{
+    position: absolute;
+    top: 100px;
+    color: #FFFFFF;
+  }
+  

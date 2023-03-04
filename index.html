@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="blog">Blogging Website</span>
+            <button id="myBtn">Create New Post</button>
+        </header>
+    
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form style="display: flex; flex-direction: column; gap:15px">
+                    <div>
+                    <span class="input-heading">Create A Post</span>
+                    <span class="close">&times;</span>
+                    </div>
+                    <div>
+                        <input class="input" id="data" type="text" placeholder="Enter Your heading....">
+                    </div>
+                    <div>
+                        <textarea placeholder="Enter Your Blog Post...."  id="text-area" ></textarea>
+                    </div>
+                    <div>
+                        <input class="action-btn" id="publish" value="Publish Post" type="button" onclick="list1()">
+                        <input type="reset" value="Cancel" class="action-btn" id="cancel Post">
+                    </div>
+                </form>
+        </div>
+    </div>
+    <table class="table">
+        
+    </table>
+    <script>
+       // Get the modal
+       var modal = document.getElementById("myModal");
+
+       // Get the button that opens the modal
+       var btn = document.getElementById("myBtn");
+
+       
+       // Get the <span> element that closes the modal
+       var span = document.getElementsByClassName("close")[0];
+
+       // When the user clicks the button, open the modal 
+       btn.onclick = function() {
+           modal.style.display = "block";
+       }
+       // When the user clicks on <span> (x), close the modal
+       span.onclick = function() {
+            modal.style.display = "none";
+       }
+       // When the user clicks anywhere outside of the modal, close it
+       window.onclick = function(event) {
+            if (event.target == modal) {
+               modal.style.display = "none";
+            }
+       }
+
+
+
+       //in webpage
+
+   
+
+    const table = document.querySelector('.table')
+    
+    const text_area = document.getElementById('text-area')
+
+
+    var row = table.insertRow(-1);
+    
+    var cell0 = row.insertCell(0)
+
+    function list1(){
+        const table = document.querySelector('.table')
+        
+        table.style.width = '100%';
+
+
+        var row = table.insertRow(-1);
+        row.style.display = 'block'
+        row.style.float = 'left'
+        row.style.border = '1px solid white'
+        row.style.height = 'auto'
+        row.style.margin = '20px'
+    
+        var cell0 = row.insertCell(0);
+        
+        cell0.innerHTML = data.value;
+        cell0.style.fontSize = 'x-large';
+        cell0.style.fontWeight = '500'
+        cell0.style.display = 'block'
+        cell0.style.margin = '20px'
+
+
+
+        var cell1 = row.insertCell(1);
+
+        cell1.innerHTML = text_area.value;    //text-area
+        cell1.style.display = 'block'
+        cell1.style.margin = '20px'
+        
+        var cell2 = row.insertCell(2);
+
+        var btn1 = document.createElement('button')
+        btn1.innerHTML = 'Edit Post'
+        cell2.appendChild(btn1);
+        btn1.style.background = "#1E1E1E";
+        btn1.style.color = 'white';
+        btn1.style.border = '1px solid white'
+         btn1.style.paddingLeft = '10px'
+         btn1.style.paddingRight = '10px'
+         btn1.style.paddingTop = '5px'
+         btn1.style.paddingBottom ='5px'
+         btn1.style.marginLeft = '20px'
+         btn1.style.marginRight = '20px'
+         btn1.style.marginBottom = '10px'
+
+
+
+        var cell3 = row.insertCell(3);
+
+        var btn2 = document.createElement('button')
+        btn2.innerHTML = 'Delete Post'
+        cell3.appendChild(btn2);
+        
+        btn2.style.background = "#1E1E1E";
+        btn2.style.color = 'white';
+        btn2.style.border = '1px solid white'
+         btn2.style.paddingLeft = '10px'
+         btn2.style.paddingRight = '10px'
+         btn2.style.paddingTop = '5px'
+         btn2.style.paddingBottom ='5px'
+         btn1.style.marginLeft = '20px'
+         btn2.style.marginRight = '20px'
+          btn2.style.marginBottom = '10px'
+
+        var cell4 = row.insertCell(4);
+        
+        const date = new Date();
+        cell4.innerText = date;
+        // cell4.style.marginLeft = '50px'
+        // cell4.style.marginRight = '20px'
+        // cell4.style.marginBottom = '20px'
+
+       
+    }
+
+
+    </script>
+</body>
+</html>
